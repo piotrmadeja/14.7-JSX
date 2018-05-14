@@ -1,0 +1,71 @@
+body {
+  margin: 50px;
+}
+
+.app {
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.contactForm {
+  margin: 50px;
+  border: 2px solid black;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 4px grey;
+}
+
+.contactForm input {
+  width: 90%;
+  margin: 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #E1E1E1;
+}
+
+.contactForm button {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+  margin: 20px;
+  box-shadow: 3px 3px 4px grey;
+}
+
+.contactForm button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.contactsList {
+  margin: 30px;
+  border-radius: 20px;
+  padding: 0;
+}
+
+.contactItem {
+  border: 1px solid black;
+  margin: 20px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 4px grey;
+}
+
+.contactItem img {
+  width: 200px;
+  float: left;
+  padding: 10px 10px 10px 10px;
+}
+
+.contactData {
+  margin-top: 10px;
+}
+
