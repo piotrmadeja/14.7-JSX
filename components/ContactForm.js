@@ -5,27 +5,15 @@ var ContactForm = React.createClass({
 
   render: function() {
     return (
-      React.createElement('form', {className: 'contactForm'},
-        React.createElement('label', {htmlFor: 'name'}, "Imię: "),
-        React.createElement('input', {
-          type: 'text',
-          placeholder: 'Imię',
-          value: this.props.contact.firstName,
-        }),
-        React.createElement('label', {htmlFor: 'surname'}, "Nazwisko: "),
-        React.createElement('input', {
-          type: 'text',
-          placeholder: 'Nazwisko',
-          value: this.props.contact.lastName,
-        }),
-        React.createElement('label', {htmlFor: 'email'}, "e-mail: "),
-        React.createElement('input', {
-          type: 'email',
-          placeholder: 'Email',
-          value: this.props.contact.email,
-        }),
-        React.createElement('button', {type: 'submit'}, "Dodaj kontakt")
-      )
-    )
-  },
+			<form className = {'contactForm'}>
+				<label htmlFor={'name'}>Imię: </label>
+				<input className={'formField'} type = {'text'} id = {'name'} placeholder = {'Poadaj imię'} value = {this.props.contact.firstName}></input>
+				<label htmlFor={'surname'}> Nazwisko: </label>
+				<input className={'formField'} type = {'text'} id = {'surname'} placeholder= {'Podaj nazwisko'} value = {this.props.contact.lastName}></input>
+				<label htmlFor = {'email'}>Email:</label>
+				<input className = {'formField'} type = {'text'} id = {'email'} placeholder = {'Podaj e-mail'} value = {this.props.contact.email}></input>
+				<button	type = {'submit'} className = {'addContact'}>Dodaj kontakt</button>
+      </form> 
+    );
+  }
 })
